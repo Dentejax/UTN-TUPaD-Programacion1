@@ -56,9 +56,8 @@ es_par = 0
 es_impar = 0
 positivos = 0
 negativos = 0
-cero = 0
 print("Advertencia tendra que ingresar 100 nuumeros")
-for i in range(10):
+for i in range(100):
     num = int(input("Ingrese un numero: "))
     if (num % 2) == 0:
         es_par += 1
@@ -80,7 +79,7 @@ print("Negativos: ", negativos)
 media = 0
 temp = 0
 print("Advertencia tendra que ingresar 100 nuumeros")
-for i in range(10):
+for i in range(100):
     num = int(input("Ingrese un numero entero: "))
     temp += num
     media = temp / 10
@@ -91,14 +90,6 @@ inverso = 0
 num = int(input("Ingrese un numero entero para invertirlo: "))
 while num != 0:
     digito = num % 10
-    num = num._round(num / 10)
+    num = round(num // 10)
     inverso *= 10 + digito
 print("El numero inverso: ", inverso)
-#Mientras num <> 0 Hacer
-#		digito = num mod 10
-#		num = trunc(num / 10)
-#		inverso = inverso * 10 + digito
-#	FinMientras	
-#	Escribir "El numero inverso es: ", inverso
-
-#Acordate de cambiar los 10 por 100 en el 8 y 9
